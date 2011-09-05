@@ -16,9 +16,9 @@ if enable_css == true %>
 function gmaps4rails_init() {
 	<% #true is passed here to trigger map initialization %>
 	<%=raw options.to_gmaps4rails(true) %>
-}
+};
 
-window.onload = gmaps4rails_init;
+$(gmaps4rails_init);
 
 </script>
 <% end %>
